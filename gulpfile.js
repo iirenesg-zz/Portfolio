@@ -1,3 +1,5 @@
+var gulp = require('gulp');
+
 /*---------  Sass ---------*/
 
 var sass = require('gulp-sass');
@@ -78,11 +80,11 @@ var runSequence = require('run-sequence');
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['sass', 'useref', 'images'],
+    ['sass', 'useref', 'images']
   )
 })
 
 gulp.task('default', function (callback) {
-  runSequence(['sass','browserSync', 'watch'],
+  runSequence(['sass','browserSync', 'watch']
   )
 })
