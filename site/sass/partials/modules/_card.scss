@@ -1,0 +1,43 @@
+.card-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	& > h2 {
+		flex: none;
+		display: block;
+		width: 100%;
+	}
+
+	& > .btn-box {
+		margin-top: $box-l;
+	}
+}
+
+.card {
+	width: 30%;
+	position: relative;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.card-info {
+	position: absolute;
+	height: 65px;
+	bottom: 0;
+	overflow: hidden;
+	padding: $el-s;
+	background-color: #fff;
+	-webkit-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.25);
+	-moz-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.25);
+	box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.25);
+	transition: all .3s;
+}
+
+.card:hover .card-info{
+	bottom: -65px;
+	height: auto;
+}

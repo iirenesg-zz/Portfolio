@@ -5,7 +5,7 @@
 
 h1 {
   font-size: 2.5rem;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 h2 {
@@ -21,7 +21,8 @@ h2,
 h3,
 h4 {
   color: #000;
-  font-family: $font-titles;
+  font-family: $font-base;
+  font-weight: 900;
 }
 
 .title-decor {

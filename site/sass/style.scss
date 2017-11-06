@@ -8,6 +8,7 @@
 @import "partials/elements/type";
 @import "partials/elements/headings";
 @import "partials/elements/links";
+@import "partials/elements/buttons";
 @import "partials/elements/lists";
 @import "partials/elements/table";
 @import "partials/elements/form";
@@ -15,6 +16,10 @@
 @import "partials/elements/images";
 
 // Modules
+@import "partials/modules/nav";
+@import "partials/modules/card";
+@import "partials/modules/box-image";
+@import "partials/modules/svg-graphics";
 
 //Layout
 @import "partials/layout/header";

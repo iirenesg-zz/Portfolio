@@ -1,8 +1,7 @@
 // Font
 
 $font-base: 'Muli', sans-serif;
-$font-titles: 'Yanone Kaffeesatz', sans-serif;
-$font-titles2: 'Fira Sans', sans-serif;
+$font-display: 'Yanone Kaffeesatz', sans-serif;
 
 // Colors
 
@@ -14,10 +13,10 @@ $color-contrast: rgb(20, 20, 20);
 // Spacing for elements
 $spacing: 1rem;
 $el-s: 1.125rem;
-$el-m: 2.25rem;
-$el-l: 3.375rem;
+$el-m: 1.5rem;
+$el-l: 2rem;
 
 // Spacing for boxes
-$box-s: 4.5rem;
-$box-m: 5.625rem;
-$box-l: 6.75rem;
+$box-s: 2.5rem;
+$box-m: 5rem;
+$box-l: 7.5rem;

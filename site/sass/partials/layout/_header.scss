@@ -1,0 +1,27 @@
+header {
+	position: absolute;
+	width: 100%;
+}
+
+.home-h {
+	display: grid;
+	grid-template-columns: 30vw 40vw;
+	transform: translateY(-50%);
+	top: 40vh;
+	z-index: 5;
+}
+
+.main-description {
+	grid-column-start: 2;
+	position: relative;
+	z-index: 2;
+
+	span {
+		font-weight: 700;
+		font-size: 24px;
+		background-color: $color-main;
+		margin-bottom: $el-s;
+		display: inline-block;
+		padding: 5px;
+	}
+}

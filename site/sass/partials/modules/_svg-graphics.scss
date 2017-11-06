@@ -1,0 +1,35 @@
+.home-animation {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.dash {
+	fill: #fff;
+}
+
+.path-stroke {
+	fill: none;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+
+.path-stroke-s {
+	stroke-width: 10;
+}
+
+.path-stroke-m {
+	stroke-width: 5;
+}
+
+.path-stroke-l {
+	stroke-width: 15;
+}
+
+.svg-arrow {
+	fill: $color-main;
+}
+
+.svg-logo {
+	fill: #000;
+}

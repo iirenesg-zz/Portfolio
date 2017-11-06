@@ -1,0 +1,91 @@
+.footer-top {
+	background-color: #000;
+	color: #fff;
+}
+
+.footer-icon-wrapper {}
+
+.footer-icon {
+	width: 41px;
+	height: 41px;
+	background: no-repeat url("../img/rss-sheet.png");
+	display: inline-block;
+	margin: 0 7px;
+	transition: all .3s;
+}
+
+.ig-icon {
+	background-position: -5px -4px;
+
+	&:hover {
+		background-position: -5px -47px;
+	}
+}
+
+.em-icon {
+	background-position: -48px -4px;
+
+	&:hover {
+		background-position: -48px -47px;
+	}
+}
+
+.ln-icon {
+	background-position: -134px -4px;
+
+	&:hover {
+		background-position: -134px -47px;
+	}
+}
+
+.git-icon {
+	background-position: -91px -4px;
+
+	&:hover {
+		background-position: -91px -47px;
+	}
+}
+
+.footer-bottom {
+	background-color: $color-main;
+
+	div > p {
+		width: 30%;
+	}
+}
+
+.footer-top, .footer-bottom {
+	div {
+	 	display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	 }
+}
+
+.footer-icon-wrapper {
+	float: right;
+	position: relative;
+	top: -15px;
+}
+
+.up-icon {
+	text-align: center;
+
+	span {
+		background: no-repeat #000 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDYxIDM5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MSAzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZFREEwMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTguOCwzMS4yYy0wLjQsMC0wLjgtMC4xLTEuMS0wLjRjLTAuNi0wLjYtMC42LTEuNSwwLTIuMUwyOS41LDYuOWMwLjYtMC42LDEuNS0wLjYsMi4xLDBsMjEuMywyMS4zDQoJYzAuNiwwLjYsMC42LDEuNSwwLDIuMXMtMS41LDAuNi0yLjEsMEwzMC41LDEwLjFMOS44LDMwLjhDOS41LDMxLjEsOS4yLDMxLjIsOC44LDMxLjJ6Ii8+DQo8L3N2Zz4NCg==);
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 0;
+		display: inline-block;
+		padding: 5px 10px 15px;
+		transition: all .3s;
+		cursor: pointer;
+
+		&:hover {
+			height: 75px;
+		}
+	}
+
+
+}
