@@ -17,7 +17,11 @@ main {
 }
 
 .l-section {
-	padding: $box-m;
+	padding: $box-m 0;
+
+	@include query(1200px) {
+		padding: $box-m;
+	}
 }
 
 .m-section {
