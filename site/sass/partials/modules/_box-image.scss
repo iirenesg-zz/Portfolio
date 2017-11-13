@@ -9,7 +9,7 @@
 }
 
 .box-image {
-	width: 24%;
+	width: 49%;
 	position: relative;
 	margin-bottom: $el-s;
 
@@ -20,6 +20,15 @@
 
 	&:hover .box-image-display {
 		opacity: 100;
+	}
+
+
+	@include query(600px) {
+		width: 32%;
+	}
+
+	@include query(900px) {
+		width: 24%;
 	}
 }
 

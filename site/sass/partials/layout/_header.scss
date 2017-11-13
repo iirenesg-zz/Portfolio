@@ -4,11 +4,32 @@ header {
 }
 
 .home-h {
-	display: grid;
-	grid-template-columns: 30vw 40vw;
-	transform: translateY(-50%);
-	top: 40vh;
+	width: 80%;
+	transform: translateX(-50%);
+	left: 50%;
 	z-index: 5;
+	margin-top: $box-m;
+
+	@include query(450px) {
+		margin-top: $box-l;
+		width: 60%;
+	}
+
+	@include query(600px) {
+		margin: 0;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 25vw 60vw;
+		grid-column-gap: $el-l;
+		transform: translateY(-50%);
+		top: 40vh;
+		left: 0;
+	}
+
+	@include query(800px) {
+		grid-template-columns: 30vw 40vw;
+		grid-column-gap: 0;
+	}
 }
 
 .main-description {
@@ -23,5 +44,33 @@ header {
 		margin-bottom: $el-s;
 		display: inline-block;
 		padding: 5px;
+	}
+}
+
+.header-mobile {
+	position: absolute;
+	z-index: 7;
+	top: 0;
+	width: 100%;
+
+	@include query(800px) {
+		display: none;
+	}
+}
+
+.mobile-logo {
+	display: inline-block;
+	width: 50%;
+	max-width: 250px;
+
+	@include query(600px) {
+		grid-column-start: 1;
+		margin-left: $box-m;
+		position: relative;
+		top: 10px;
+	}
+
+	@include query(800px) {
+		display: none;
 	}
 }
