@@ -16,6 +16,10 @@
     "url": "https://github.com/iirenesg/Portfolio/issues"
   },
   "homepage": "https://github.com/iirenesg/Portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "smoothscroll-polyfill": "^0.4.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
