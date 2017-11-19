@@ -45,3 +45,25 @@
 .unformatted-list li {
     list-style: none;
 }
+
+
+.temp {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: $box-l;
+
+    @include query(500px) {
+       width: 60%; 
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        max-width: 300px;
+        margin: 0 auto $el-s;
+        text-align: center;
+    }
+}
