@@ -72,8 +72,14 @@
 		text-align: center;
 	}
 
-	span {
+	a {
+		border: none;
+		display: inline-block;
 		margin: 0 7px;
+	}
+
+	a:hover {
+		background-color: transparent;
 	}
 }
 

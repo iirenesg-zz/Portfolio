@@ -32,6 +32,15 @@ main {
 	padding: $box-m*0.75 0 $box-s;
 }
 
+.inner-section {
+	padding-top: $box-m;
+}
+
+.inner-section-m {
+	padding-top: $box-m*2;
+}
+
+
 .bg-gray {
 	background-color: #F0F0F0;
 }

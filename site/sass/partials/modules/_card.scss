@@ -77,6 +77,19 @@
 
 .card-info-icon {
 	margin-bottom: $el-s/2;
+
+	p {
+		display: inline-block;
+	}
+
+	p:last-child {
+		position: relative;
+		left: $box-m*0.75;
+
+		@include query(420px) {
+			left: $el-s;
+		}
+	}
 }
 
 .card-icon-wrapper {
