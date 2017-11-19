@@ -11,34 +11,25 @@
 	}
 
 	& > .btn-box {
-		margin-top: $box-m;
+		margin-top: $el-m;
 
 		@include query(1080px) {
-			margin-top: $box-l;
+			margin-top: $box-s;
 		}
-	}
-
-	@include query(1080px) {
-		justify-content: space-between;
 	}
 }
 
 .card {
 	width: 100%;
 	max-width: 400px;
-	margin: 0 0 $el-l;
+	margin: 0 0 $el-l*2;
 	position: relative;
+	z-index: 1;
 
 	@include query(700px) {
 		display: flex;
 		width: 100%;
-		max-width: 100%;
-	}
-
-	@include query(1080px) {
-		width: 30%;
-		margin: 0;
-		display: inline-block;
+		max-width: 900px;
 	}
 }
 
@@ -50,29 +41,105 @@
 		width: 50%;
 		height: 100%;
 	}
-
-	@include query(1080px) {
-		width: 100%;
-		height: auto;
-	}
-
 }
 
 .card-info {
 	height: auto;
+	width: 100%;
 	padding: $el-s;
 	background-color: #fff;
 	transition: all .3s;
 
-	@include query(1080px) {
-		height: 65px;
-		bottom: 0;
-		position: absolute;
-		overflow: hidden;
+	h3 {
+		margin: 0;
+	}
+
+	@include query(700px) {
+		width: 50%;
+	}
+
+	.btn-small {
+		display: inline-block;
+		margin-top: $el-l;
+
+		@include query(700px) {
+			position: absolute;
+			bottom: 0;
+			margin: 0 0 $el-l;
+		}
 	}
 }
 
 .card:hover .card-info{
 	bottom: -65px;
 	height: auto;
+}
+
+.card-info-icon {
+	margin-bottom: $el-s/2;
+}
+
+.card-icon-wrapper {
+	@include query(700px) {
+		width: 115%;
+		position: relative;
+		left: -33px;
+	}
+
+	@include query(875px) {
+		left: -35px;
+	}
+
+	@include query(1080px) {
+		left: -42px;
+		top: -15px;
+	}
+
+	@include query(1500px) {
+		left: -50px;
+	}
+}
+
+.card-info-icon:before {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	top: 10px;
+	margin-right: $el-m;
+
+	@include query(875px) {
+		width: 40px;
+		height: 40px;
+	}
+
+	@include query(1080px) {
+		width: 50px;
+		height: 50px;
+		top: 17px;
+	}
+
+	@include query(1500px) {
+		width: 60px;
+		height: 60px;
+		top: 25px;
+	}
+}
+
+.icon-code:before {
+	content: url("../img/code.svg");
+}
+
+.icon-cms:before {
+	content: url("../img/idea.svg");
+}
+
+.icon-role:before {
+	content: url("../img/comu.svg");
+}
+
+.icon-link:before {
+	content: url("../img/link.svg");
 }

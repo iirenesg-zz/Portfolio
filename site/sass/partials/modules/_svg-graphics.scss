@@ -1,7 +1,12 @@
 .home-animation {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+	display: none;
+
+	@include query(400px) {
+		display: initial;
+		width: 100%;
+		position: absolute;
+		bottom: 0;		
+	}
 }
 
 .dash {

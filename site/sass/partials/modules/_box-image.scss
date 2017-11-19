@@ -4,7 +4,11 @@
 	justify-content: space-around;
 
 	& + .btn-box {
-		margin-top: $box-s;
+		margin-top: $el-m;
+
+		@include query(1080px) {
+			margin-top: $box-m;
+		}
 	}
 }
 
@@ -12,6 +16,17 @@
 	width: 49%;
 	position: relative;
 	margin-bottom: $el-s;
+	color: #fff;
+
+	h4 {
+		margin: 0;
+	}
+
+	p {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
 
 	img {
 		width: 100%;
@@ -33,7 +48,7 @@
 }
 
 .box-image-display {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 	position: absolute;
 	top: 0;
 	width: 100%;
