@@ -50,10 +50,6 @@
 	background-color: #fff;
 	transition: all .3s;
 
-	h3 {
-		margin: 0;
-	}
-
 	@include query(700px) {
 		width: 50%;
 	}
@@ -70,9 +66,7 @@
 	}
 }
 
-.card:hover .card-info{
-	bottom: -65px;
-	height: auto;
+.card:hover {
 }
 
 .card-info-icon {
@@ -84,61 +78,25 @@
 
 	p:last-child {
 		position: relative;
-		left: $box-m*0.75;
-
-		@include query(420px) {
-			left: $el-s;
-		}
 	}
 }
 
 .card-icon-wrapper {
 	@include query(700px) {
-		width: 115%;
+		width: 100%;
 		position: relative;
-		left: -33px;
-	}
-
-	@include query(875px) {
-		left: -35px;
-	}
-
-	@include query(1080px) {
-		left: -42px;
-		top: -15px;
-	}
-
-	@include query(1500px) {
-		left: -50px;
 	}
 }
 
 .card-info-icon:before {
-	width: 30px;
-	height: 30px;
+	width: 45px;
+	height: 45px;
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: relative;
-	top: 10px;
-	margin-right: $el-m;
-
-	@include query(875px) {
-		width: 40px;
-		height: 40px;
-	}
-
-	@include query(1080px) {
-		width: 50px;
-		height: 50px;
-		top: 17px;
-	}
-
-	@include query(1500px) {
-		width: 60px;
-		height: 60px;
-		top: 25px;
-	}
+	top: 11px;
+	margin-right: $el-s/2;
 }
 
 .icon-code:before {
@@ -146,7 +104,7 @@
 }
 
 .icon-cms:before {
-	content: url("../img/idea.svg");
+	content: url("../img/tool.svg");
 }
 
 .icon-role:before {
